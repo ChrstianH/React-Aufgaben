@@ -1,0 +1,117 @@
+@font-face {
+  font-family: "Poppins";
+  src: url("../src/assets/fonts/Poppins/Poppins-Regular.ttf");
+}
+@font-face {
+  font-family: "PoppinsBold";
+  src: url("../fonts/Poppins/Poppins-Bold.ttf");
+}
+
+:root {
+  --color1: #23283e;
+  --color2: #2a2f4c;
+  --color3: #bdbddd;
+  --color4: #cdcdff;
+  --color5: #90a0d9;
+}
+
+body {
+  background-color: var(--color1);
+  font-family: "Poppins";
+}
+
+.projects {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.project-box {
+  padding: 15px 0;
+  background-color: var(--color2);
+  p {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  b {
+    display: block;
+    font-family: "PoppinsBold";
+  }
+}
+
+h1,
+h2,
+footer {
+  margin-top: 75px;
+}
+
+footer {
+  margin-bottom: 50px;
+}
+
+.intro-items,
+.skills,
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h3,
+h2,
+h1 {
+  font-family: "PoppinsBold";
+  span {
+    color: var(--color5);
+  }
+}
+
+.skills {
+  width: 33%;
+  margin: 0 auto;
+}
+
+.intro-items > p {
+  width: 60%;
+}
+
+p,
+b,
+footer {
+  font-size: 0.85rem;
+}
+
+h3,
+h2,
+h1,
+p,
+b,
+.skill,
+footer {
+  text-align: center;
+  color: var(--color3);
+}
+
+button {
+  padding: 7px 12px;
+  background-color: var(--color1);
+  font-family: "Poppins";
+  color: var(--color3);
+  font-size: 0.8rem;
+  border: 1px solid var(--color3);
+}
+
+.skill-box {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.skill {
+  padding: 10px 15px;
+  width: fit-content;
+  background-color: var(--color2);
+}
