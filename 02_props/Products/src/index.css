@@ -1,0 +1,45 @@
+:root {
+  line-height: 1.5;
+  font-weight: 400;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+button {
+  border-radius: 30px;
+  border: 1px solid transparent;
+  padding: 0.75em 6em;
+  font-size: 0.8em;
+  font-weight: 500;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #c58989;
+  cursor: pointer;
+  color: White;
+}
+
+.products {
+  display: flex;
+  gap: 15px;
+}
+
+.product {
+  text-align: center;
+  img {
+    width: 33vw;
+  }
+}
+
+.bold {
+  font-weight: bold;
+}
