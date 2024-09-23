@@ -1,0 +1,34 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color: rgba(255, 255, 255, 0.87);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.faq-block {
+  background-color: #242424;
+}
+
+.question,
+.answer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4px 10px;
+}
+.answer {
+  border-top: 3px solid #666;
+}
+
+.longAnswer {
+  padding: 4px 10px;
+  p {
+    margin-bottom: 16px;
+  }
+}
