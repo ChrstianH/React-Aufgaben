@@ -4,8 +4,9 @@ export default function InputArea() {
   const [todo, setTodo] = useState("");
 
   const handleSubmit = () => {
-    const todos = [];
+    const todos: string[] = JSON.parse(localStorage.getItem("todo") || "[]");
     todos.push(todo);
+    localStorage.setItem("todo", JSON.stringify(todos));
     setTodo("");
   };
 
