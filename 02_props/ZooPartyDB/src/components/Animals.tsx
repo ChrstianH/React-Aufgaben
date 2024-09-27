@@ -1,5 +1,5 @@
 import animals from "../assets/data";
-import Animal from "./animal";
+import Animal from "./Animal";
 
 function Animals() {
   return (
