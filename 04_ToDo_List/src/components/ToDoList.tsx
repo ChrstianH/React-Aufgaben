@@ -16,7 +16,7 @@ export default function ToDoList() {
   };
 
   return (
-    <div>
+    <div className="todo-list">
       {toDos.map((toDo: any) => (
         <ToDo key={toDo} name={toDo} onDelete={handleDelete}>
           {toDo}

@@ -17,14 +17,43 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-header > h1 {
+header > h1,
+form,
+.todo-list {
   display: flex;
   justify-content: center;
-  padding: 10px 50px;
+  padding: 10px 16px;
+  width: 50%;
+  margin: 20px auto;
+}
+
+header > h1 {
   background-color: blueviolet;
   color: lime;
-  width: 45%;
-  margin: 20px auto;
   font-family: "Orbitron";
   letter-spacing: 5px;
+}
+
+.todo-list {
+  flex-direction: column;
+}
+form {
+  line-height: 1.25;
+}
+form,
+.todo-list {
+  gap: 32px;
+  background-color: green;
+}
+
+.todo-list > div {
+  display: flex;
+  justify-content: space-between;
+}
+.todo-list > div > div {
+  display: flex;
+  gap: 16px;
+}
+.line-through {
+  text-decoration: line-through;
 }
