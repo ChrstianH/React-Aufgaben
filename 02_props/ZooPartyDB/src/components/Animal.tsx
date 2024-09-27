@@ -11,12 +11,14 @@ interface AnimalProps {
 function Animal(props: AnimalProps) {
   return (
     <div className="animal">
-      <div className="emoji">{props.emoji}</div>
-      <div className="name">{props.name}</div>
-      <div>{props.species}</div>
-      <div>{props.habitat}</div>
-      <div>{props.diet}</div>
-      <div>{props.lifespan} years</div>
+      <div className="animal-upper">
+        <div className="emoji">{props.emoji}</div>
+        <div className="name">{props.name}</div>
+        <div>{props.species}</div>
+        <div>{props.habitat}</div>
+        <div>{props.diet}</div>
+        <div>{props.lifespan} years</div>
+      </div>
       <div className="funfacts">
         <ul>
           {props.funFacts.map((fact) => (
