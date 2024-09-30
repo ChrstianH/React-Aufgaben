@@ -1,7 +1,4 @@
 import { NavLink } from "react-router-dom";
-import Home from "./Home";
-import About from "./About";
-import Products from "./Products";
 
 interface LayoutProps {
   children: React.ReactNode;
