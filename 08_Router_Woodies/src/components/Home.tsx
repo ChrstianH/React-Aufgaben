@@ -1,5 +1,8 @@
+import Layout from "./Layout";
+
 export default function Home() {
   return (
+    <Layout>
     <div className="home">
       <div className="leftside">
         <p>
@@ -10,5 +13,6 @@ export default function Home() {
       </div>
       <img src="../src/assets/img/Home.png" alt="Tisch Homepage" />
     </div>
+    </Layout>
   );
 }
