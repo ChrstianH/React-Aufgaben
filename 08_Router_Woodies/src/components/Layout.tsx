@@ -14,13 +14,13 @@ export default function Layout(props: LayoutProps) {
         <img src="../src/assets/img/Logo.png" alt="Woodies Logo" />
         <nav>
           <NavLink to="/">
-            <Home />
+            Home
           </NavLink>
           <NavLink to="/about">
-            <About />
+            About
           </NavLink>
           <NavLink to="/products">
-            <Products />
+            Products
           </NavLink>
         </nav>
       </header>

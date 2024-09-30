@@ -20,13 +20,28 @@ body {
   padding: 0;
   box-sizing: border-box;
 }
-
+/**************************************
+              Header
+**************************************/
 header {
-  height: 80px;
+  height: 33px;
+  display: flex;
+  padding: 20px 80px;
+  justify-content: space-between;
 }
 
+header > img {
+  height: 20px;
+}
+
+header > nav {
+  display: flex;
+  gap: 48px;
+}
+
+
 .home {
-  padding: 93px 0 122px 0;
+  padding: 56px 0 85px 0;
   display: flex;
   flex-direction: row;
 }
