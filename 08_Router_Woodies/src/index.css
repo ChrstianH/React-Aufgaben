@@ -1,0 +1,80 @@
+@font-face {
+  font-family: Nunito;
+  src: url("./assets/fonts/Nunito/Nunito-Regular.ttf");
+}
+:root {
+  font-family: Nunito;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+}
+
+body {
+  max-width: 1152px;
+  height: 791px;
+  background: #fff;
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  height: 80px;
+}
+
+.home {
+  padding: 93px 0 122px 0;
+  display: flex;
+  flex-direction: row;
+}
+
+.leftside {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  padding-left: 102px;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 17px;
+}
+
+.leftside > p {
+  margin: 0;
+  color: #3e3f43;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  span {
+    font-weight: 700;
+  }
+}
+
+.leftside > h2 {
+  margin: 0;
+  color: #313235;
+  font-size: 72px;
+  font-weight: 700;
+}
+
+.leftside > button {
+  margin: 0;
+  color: #fff;
+  width: 190px;
+  font-weight: 700;
+  padding: 14px 24px;
+  border-radius: 4px;
+  background-color: #daa520;
+}
+
+/**************************************************
+                    About
+**************************************************/
+
+.about {
+  display: flex;
+  flex-direction: column;
+}
