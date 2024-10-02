@@ -1,0 +1,61 @@
+@font-face {
+  font-family: "Roboto Slab";
+  src: url("../src/assets/fonts/Roboto_Slab/static/RobotoSlab-Regular.ttf");
+}
+
+:root {
+  font-family: "Roboto Slab";
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  max-width: 414px;
+  margin: 0 auto;
+}
+
+.beer-card {
+  display: flex;
+  img {
+    height: 191px;
+  }
+}
+
+.beer-card > div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 10px;
+  .title {
+    font-size: 30px;
+    color: #333;
+    font-weight: 500;
+  }
+  .tagline {
+    color: #ffca41;
+    font-size: 18px;
+    font-weight: 900;
+    margin-top: -6px;
+    margin-bottom: 13px;
+  }
+  .contributor {
+    color: #333;
+    font-size: 15px;
+    font-weight: 500;
+    margin-bottom: 19px;
+  }
+  button {
+    width: 111px;
+    height: 31px;
+    border-radius: 40px;
+    background: #ffca41;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    border: none;
+    font-family: "Roboto Slab";
+  }
+}
