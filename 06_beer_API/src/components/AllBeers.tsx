@@ -7,9 +7,16 @@ export default function AllBeers() {
   const [beers, setBeers] = useState<Beer[]>([]);
 
   useEffect(() => {
-    fetch(BASE_URL).then((response) =>
-      response.json().then((data) => setBeers(data))
-    );
+    async function getBeers() {
+      try {
+        const response = await fetch(BASE_URL);
+        const json = await response.json();
+        setBeers(json);
+      } catch (err) {
+        console.error(err);
+      }
+    }
+    getBeers();
   }, []);
 
   return (

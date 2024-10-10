@@ -58,4 +58,8 @@ body {
     border: none;
     font-family: "Roboto Slab";
   }
+
+  .description {
+    display: none;
+  }
 }
