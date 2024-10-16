@@ -1,8 +1,8 @@
 import { useRef } from "react";
 
 function App() {
-  const nameRef = useRef(null);
-  const dateRef = useRef(null);
+  const nameRef = useRef<HTMLInputElement>(null);
+  const dateRef = useRef<HTMLInputElement>(null);
 
   const handleSubmit = () => {
     if (nameRef.current?.value === "") {
@@ -10,7 +10,7 @@ function App() {
     } else if (dateRef.current?.value === "") {
       alert("Wann ist dein Geburtstag?");
     } else {
-      const inputDate = new Date(dateRef.current?.value);
+      const inputDate = new Date(dateRef.current!.value);
       if (
         inputDate.getMonth() === new Date().getMonth() &&
         inputDate.getDate() === new Date().getDate()
