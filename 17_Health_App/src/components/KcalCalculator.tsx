@@ -22,23 +22,24 @@ export default function KcalCalculator() {
 
     if (genderM) {
       const basalMetabolicRate = 66.47 + 13.7 * weight + 5 * size - 6.8 * age;
-      setBmr(Math.round(basalMetabolicRate * 1000) / 1000);
-      setTdee(Math.round(basalMetabolicRate * activity * 1000) / 1000);
+      setBmr(basalMetabolicRate);
+      setTdee(basalMetabolicRate * activity);
     } else if (genderF) {
       const basalMetabolicRate = 655.1 + 9.6 * weight + 1.8 * size - 4.7 * age;
-      setBmr(Math.round(basalMetabolicRate * 1000) / 1000);
-      setTdee(Math.round(basalMetabolicRate * activity * 1000) / 1000);
+      setBmr(basalMetabolicRate);
+      setTdee(basalMetabolicRate * activity);
     }
   };
 
   return (
-    <div>
+    <section className="calories">
       <h1>Test your daily Calorie Requirement</h1>
       <p>
         To determine your daily calorie requirement, we need some information
         about your age, gender, weight, height and activity level. Enter this
         information to calculate your individual requirements.
       </p>
+
       <form onSubmit={handleSubmit}>
         <label htmlFor="bodySize">Body size (in cm)</label>
         <input ref={sizeRef} type="number" name="bodySize" id="bodySize" />
@@ -71,14 +72,14 @@ export default function KcalCalculator() {
       </div>
       <div>
         <div>Basal Metabolic Rate</div>
-        <div className="kcal">{bmr}</div>
-        <div className="kJ">{bmr / 0.24}</div>
+        <div className="kcal">{Math.round(bmr * 1000) / 1000}</div>
+        <div className="kJ">{Math.round(bmr * 4186.84) / 1000}</div>
       </div>
       <div>
         <div>Total Daily Energy Expenditure</div>
-        <div className="kcal">{tdee}</div>
-        <div className="kJ">{tdee / 0.24}</div>
+        <div className="kcal">{Math.round(tdee * 1000) / 1000}</div>
+        <div className="kJ">{Math.round(tdee * 4186.84) / 1000}</div>
       </div>
-    </div>
+    </section>
   );
 }

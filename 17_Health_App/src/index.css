@@ -1,3 +1,23 @@
+@font-face {
+  font-family: Urbanist-Bold;
+  src: url("./assets/fonts/Urbanist-Bold.ttf");
+}
+
+@font-face {
+  font-family: Urbanist-Medium;
+  src: url("./assets/fonts/Urbanist-Medium.ttf");
+}
+
+@font-face {
+  font-family: Urbanist-Regular;
+  src: url("./assets/fonts/Urbanist-Regular.ttf");
+}
+
+@font-face {
+  font-family: Urbanist-SemiBold;
+  src: url("./assets/fonts/Urbanist-SemiBold.ttf");
+}
+
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -9,11 +29,88 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 #root {
   display: flex;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  background-color: #1a3129;
+  height: 95px;
+  width: 100vw;
+  padding: 25px 162px;
+}
+
+.logo {
+  width: 195px;
+  height: 45px;
+}
+
+.nav {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  button {
+    height: 55px;
+    line-height: 1.5;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 14px 24px;
+    background-color: #cbea7b;
+    border-radius: 8px;
+    border: none;
+  }
+}
+
+footer > nav,
+.nav > nav {
+  display: flex;
+  gap: 26px;
+  align-items: center;
+  a {
+    color: white;
+    text-decoration: none;
+    line-height: 1.5;
+    font-size: 18px;
+    font-weight: bold;
+  }
 }
 
 form {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+}
+
+.blogs .container {
+  display: flex;
+  gap: 30px;
+  height: 1048px;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1a3129;
+  height: 162px;
+  width: 100vw;
+  padding: 50px 162px;
+  button {
+    color: white;
+    height: 55px;
+    line-height: 1.5;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 14px 24px;
+    background-color: transparent;
+    border-radius: 8px;
+    border: none;
+  }
 }
