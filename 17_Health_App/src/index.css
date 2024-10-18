@@ -14,7 +14,7 @@
 }
 
 @font-face {
-  font-family: Urbanist-SemiBold;
+  font-family: "Urbanist-SemiBold";
   src: url("./assets/fonts/Urbanist-SemiBold.ttf");
 }
 
@@ -44,7 +44,7 @@ header {
   justify-content: space-between;
   background-color: #1a3129;
   height: 95px;
-  width: 100vw;
+  width: 99vw;
   padding: 25px 162px;
 }
 
@@ -53,15 +53,18 @@ header {
   height: 45px;
 }
 
+/**********************************
+*           NAVIGATION            *
+**********************************/
 .nav {
   display: flex;
   gap: 40px;
   align-items: center;
   button {
+    font-family: "Urbanist-SemiBold";
     height: 55px;
     line-height: 1.5;
     font-size: 18px;
-    font-weight: bold;
     padding: 14px 24px;
     background-color: #cbea7b;
     border-radius: 8px;
@@ -75,17 +78,98 @@ footer > nav,
   gap: 26px;
   align-items: center;
   a {
+    font-family: "Urbanist-SemiBold";
     color: white;
     text-decoration: none;
     line-height: 1.5;
     font-size: 18px;
-    font-weight: bold;
   }
 }
+/**********************************
+*         NAVIGATION ENDE         *
+**********************************/
+
+/**********************************
+*          HERO SECTION           *
+**********************************/
+.hero {
+  display: flex;
+  gap: 50px;
+}
+.hero > .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 759px;
+}
+.cont1_1 {
+  margin: 10px 0;
+  font-family: "Urbanist-SemiBold";
+  font-size: 28px;
+  color: #1a3129;
+  width: fit-content;
+  border-bottom: 3px solid #cbea7b;
+  margin-bottom: 14px;
+}
+.cont1_2 {
+  font-family: "Urbanist-Bold";
+  font-size: 58px;
+  color: #1a3129;
+  line-height: normal;
+  margin-bottom: 20px;
+}
+.cont1_3 {
+  font-family: "Urbanist-Medium";
+  font-size: 18px;
+  line-height: 1.5;
+  color: #333333;
+  margin-bottom: 50px;
+}
+.cont1_4 {
+  display: flex;
+  gap: 20px;
+  button {
+    font-family: "Urbanist-SemiBold";
+    font-size: 18px;
+    line-height: 1.5;
+    color: #262626;
+    margin-bottom: 50px;
+    border-radius: 8px;
+    border: none;
+    margin-bottom: 70px;
+  }
+  button:first-of-type {
+    padding: 16px 20px;
+    background-color: #cbea7b;
+  }
+  button:last-of-type {
+    padding: 16px 24px;
+    background-color: #e5f5bd;
+  }
+}
+.cont1_5 {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  div {
+    font-size: 20px;
+    line-height: 1.5;
+    font-family: "Urbanist-SemiBold";
+    color: #234338;
+    span {
+      font-family: "Urbanist-Bold";
+      color: #468671;
+    }
+  }
+}
+/**********************************
+*        HERO SECTION ENDE        *
+**********************************/
 
 form {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  padding: 20px 50px;
 }
 
 .blogs .container {
@@ -94,13 +178,16 @@ form {
   height: 1048px;
 }
 
+/**********************************
+*             FOOTER              *
+**********************************/
 footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: #1a3129;
   height: 162px;
-  width: 100vw;
+  width: 99vw;
   padding: 50px 162px;
   button {
     color: white;
@@ -113,4 +200,11 @@ footer {
     border-radius: 8px;
     border: none;
   }
+}
+
+.result-table {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 50%;
+  margin: 0 auto;
 }
