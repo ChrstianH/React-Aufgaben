@@ -38,7 +38,9 @@
 #root {
   display: flex;
 }
-
+/**********************************
+*             HEADER              *
+**********************************/
 header {
   display: flex;
   justify-content: space-between;
@@ -52,6 +54,9 @@ header {
   width: 195px;
   height: 45px;
 }
+/**********************************
+*           HEADER ENDE           *
+**********************************/
 
 /**********************************
 *           NAVIGATION            *
@@ -71,7 +76,6 @@ header {
     border: none;
   }
 }
-
 footer > nav,
 .nav > nav {
   display: flex;
@@ -95,6 +99,7 @@ footer > nav,
 .hero {
   display: flex;
   gap: 50px;
+  margin-bottom: 123px;
 }
 .hero > .container {
   display: flex;
@@ -172,11 +177,91 @@ form {
   padding: 20px 50px;
 }
 
+/**********************************
+*          BLOG SECTION           *
+**********************************/
+.blogs {
+  width: 1596px;
+  margin: 0 auto;
+}
 .blogs .container {
   display: flex;
   gap: 30px;
-  height: 1048px;
+  height: 832px;
+  justify-content: center;
+  div {
+    border-radius: 12px;
+    padding: 40px;
+    background-color: #eef8d3;
+    img {
+      margin-bottom: 40px;
+    }
+    p:nth-of-type(2) {
+      margin-bottom: 30px;
+    }
+    .topic,
+    p:nth-of-type(2) {
+      font-size: 18px;
+      font-family: "Urbanist-Medium";
+      line-height: 1.5;
+    }
+    h3 {
+      font-size: 26px;
+      font-family: "Urbanist-SemiBold";
+      line-height: 1.5;
+      margin-bottom: 30px;
+    }
+    .author {
+      display: flex;
+      gap: 16px;
+      padding: 20px;
+      background-color: #fafdf2;
+      img {
+        margin-bottom: -6px;
+        height: 60px;
+      }
+      .infos {
+        padding: 0;
+        background-color: #fafdf2;
+        .name {
+          padding: 0;
+          background-color: #fafdf2;
+          font-size: 20px;
+          font-family: "Urbanist-SemiBold";
+          line-height: 1.5;
+        }
+        .article-details {
+          padding: 0;
+          background-color: #fafdf2;
+          font-size: 18px;
+          font-family: "Urbanist-Medium";
+          line-height: 1.5;
+        }
+      }
+    }
+  }
 }
+.blogs > div:first-of-type {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 996px;
+  margin: 0 auto 80px auto;
+  text-align: center;
+  h2 {
+    font-size: 48px;
+    font-family: "Urbanist-Bold";
+    line-height: 1.5;
+  }
+  p {
+    font-size: 18px;
+    font-family: "Urbanist-Medium";
+    line-height: 1.5;
+  }
+}
+/**********************************
+*        BLOG SECTION ENDE        *
+**********************************/
 
 /**********************************
 *             FOOTER              *
@@ -201,6 +286,9 @@ footer {
     border: none;
   }
 }
+/**********************************
+*           FOOTER ENDE           *
+**********************************/
 
 .result-table {
   display: grid;
