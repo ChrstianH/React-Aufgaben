@@ -38,6 +38,7 @@
 #root {
   display: flex;
 }
+
 /**********************************
 *             HEADER              *
 **********************************/
@@ -171,18 +172,13 @@ footer > nav,
 *        HERO SECTION ENDE        *
 **********************************/
 
-form {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  padding: 20px 50px;
-}
-
 /**********************************
 *          BLOG SECTION           *
 **********************************/
 .blogs {
   width: 1596px;
   margin: 0 auto;
+  margin-bottom: 123px;
 }
 .blogs .container {
   display: flex;
@@ -264,6 +260,122 @@ form {
 **********************************/
 
 /**********************************
+*           CALCULATOR            *
+**********************************/
+.calculator {
+  width: 1596px;
+  margin: 0 auto;
+}
+.calculator > div:first-of-type {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 996px;
+  margin: 0 auto 80px auto;
+  text-align: center;
+  h2 {
+    font-size: 48px;
+    font-family: "Urbanist-Bold";
+    line-height: 1.5;
+  }
+  p {
+    font-size: 18px;
+    font-family: "Urbanist-Medium";
+    line-height: 1.5;
+  }
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 56px;
+  background-color: #f6fbe9;
+}
+form > div:first-of-type {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 45px;
+  padding: 20px 50px;
+  background-color: #f6fbe9;
+}
+form > div:first-of-type > div {
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+form > div:first-of-type > div > label {
+  font-size: 18px;
+  font-family: "Urbanist-Regular";
+  line-height: 1.5;
+}
+form > div:first-of-type > div > input,
+form > div:first-of-type > div > select {
+  font-size: 18px;
+  font-family: "Urbanist-Regular";
+  line-height: 1.5;
+  border: 1px solid #eef8d3;
+  padding: 11.5px;
+}
+
+form > div:nth-of-type(2) {
+  text-align: center;
+  background-color: #f6fbe9;
+}
+form > div:nth-of-type(2) > label {
+  font-size: 18px;
+  font-family: "Urbanist-Regular";
+  line-height: 1.5;
+}
+form > div:nth-of-type(2) > div {
+  display: flex;
+  padding: 20px 50px;
+  background-color: #f6fbe9;
+  gap: 7px;
+  justify-content: center;
+}
+form > div:nth-of-type(2) > div > label {
+  font-size: 18px;
+  font-family: "Urbanist-Regular";
+  line-height: 1.5;
+}
+form > div:nth-of-type(2) > div > input {
+  font-size: 18px;
+  font-family: "Urbanist-Regular";
+  line-height: 1.5;
+  border: 1px solid #eef8d3;
+  padding: 11.5px;
+}
+
+form > button {
+  padding: 18px 41px;
+  width: 412px;
+  background-color: #cbea7b;
+  border: none;
+  align-self: center;
+  font-size: 18px;
+  font-family: "Urbanist-SemiBold";
+  border-radius: 12px;
+}
+
+.results {
+  display: flex;
+  background-color: #f6fbe9;
+  flex-direction: column;
+  font-size: 18px;
+  font-family: "Urbanist-Medium";
+  width: 100%;
+  padding: 0 25%;
+}
+
+.result-table {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+}
+/**********************************
+*        CALCULATOR ENDE          *
+**********************************/
+
+/**********************************
 *             FOOTER              *
 **********************************/
 footer {
@@ -289,10 +401,3 @@ footer {
 /**********************************
 *           FOOTER ENDE           *
 **********************************/
-
-.result-table {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  width: 50%;
-  margin: 0 auto;
-}

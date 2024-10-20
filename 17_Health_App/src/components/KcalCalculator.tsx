@@ -32,54 +32,74 @@ export default function KcalCalculator() {
   };
 
   return (
-    <section className="calories">
-      <h1>Test your daily Calorie Requirement</h1>
-      <p>
-        To determine your daily calorie requirement, we need some information
-        about your age, gender, weight, height and activity level. Enter this
-        information to calculate your individual requirements.
-      </p>
+    <section className="calculator">
+      <div>
+        <h2>Test your daily Calorie Requirement</h2>
+        <p>
+          To determine your daily calorie requirement, we need some information
+          about your age, gender, weight, height and activity level. Enter this
+          information to calculate your individual requirements.
+        </p>
+      </div>
 
       <form onSubmit={handleSubmit}>
-        <label htmlFor="bodySize">Body size (in cm)</label>
-        <input ref={sizeRef} type="number" name="bodySize" id="bodySize" />
-        <label htmlFor="age">Age</label>
-        <input ref={ageRef} type="number" name="age" id="age" />
-        <label htmlFor="bodyWeight">Weight</label>
-        <input
-          ref={weightRef}
-          type="number"
-          name="bodyWeight"
-          id="bodyWeight"
-        />
-        <label htmlFor="activity">Activity</label>
-        <select ref={activityRef} name="activity" id="activity">
-          <option value="0.95">Schlafen</option>
-          <option value="1.2">Nur Sitzen und Liegen</option>
-          <option value="2.2">Körperlich anstrengende berufliche Arbeit</option>
-        </select>
-        <label htmlFor="gender">Gender</label>
-        <input ref={genderFRef} type="radio" name="gender" id="gender_f" />
-        <label htmlFor="gender_f">Female</label>
-        <input ref={genderMRef} type="radio" name="gender" id="gender_m" />
-        <label htmlFor="gender_m">Male</label>
+        <div>
+          <div>
+            <label htmlFor="bodySize">Body size (in cm)</label>
+            <input ref={sizeRef} type="number" name="bodySize" id="bodySize" />
+          </div>
+          <div>
+            <label htmlFor="age">Age</label>
+            <input ref={ageRef} type="number" name="age" id="age" />
+          </div>
+          <div>
+            <label htmlFor="bodyWeight">Weight</label>
+            <input
+              ref={weightRef}
+              type="number"
+              name="bodyWeight"
+              id="bodyWeight"
+            />
+          </div>
+          <div>
+            <label htmlFor="activity">Activity</label>
+            <select ref={activityRef} name="activity" id="activity">
+              <option value="0.95">Schlafen</option>
+              <option value="1.2">Nur Sitzen und Liegen</option>
+              <option value="2.2">
+                Körperlich anstrengende berufliche Arbeit
+              </option>
+            </select>
+          </div>
+        </div>
+        <div>
+          <label htmlFor="gender">Gender</label>
+          <div>
+            <input ref={genderFRef} type="radio" name="gender" id="gender_f" />
+            <label htmlFor="gender_f">Female</label>
+            <input ref={genderMRef} type="radio" name="gender" id="gender_m" />
+            <label htmlFor="gender_m">Male</label>
+          </div>
+        </div>
         <button type="submit">Calculate</button>
       </form>
 
-      <div className="result-table">
-        <div></div>
-        <div className="kcal">kcal</div>
-        <div className="kJ">kJ</div>
-      </div>
-      <div className="result-table">
-        <div>Basal Metabolic Rate</div>
-        <div className="kcal">{Math.round(bmr * 1000) / 1000}</div>
-        <div className="kJ">{Math.round(bmr * 4186.84) / 1000}</div>
-      </div>
-      <div className="result-table">
-        <div>Total Daily Energy Expenditure</div>
-        <div className="kcal">{Math.round(tdee * 1000) / 1000}</div>
-        <div className="kJ">{Math.round(tdee * 4186.84) / 1000}</div>
+      <div className="results">
+        <div className="result-table">
+          <div></div>
+          <div className="kcal">kcal</div>
+          <div className="kJ">kJ</div>
+        </div>
+        <div className="result-table">
+          <div>Basal Metabolic Rate</div>
+          <div className="kcal">{Math.round(bmr * 1000) / 1000}</div>
+          <div className="kJ">{Math.round(bmr * 4186.84) / 1000}</div>
+        </div>
+        <div className="result-table">
+          <div>Total Daily Energy Expenditure</div>
+          <div className="kcal">{Math.round(tdee * 1000) / 1000}</div>
+          <div className="kJ">{Math.round(tdee * 4186.84) / 1000}</div>
+        </div>
       </div>
     </section>
   );
