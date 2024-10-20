@@ -85,18 +85,18 @@ export default function KcalCalculator() {
       </form>
 
       <div className="results">
-        <div className="result-table">
-          <div></div>
+        <div className="result-row1">
+          <div>&nbsp;</div>
           <div className="kcal">kcal</div>
           <div className="kJ">kJ</div>
         </div>
-        <div className="result-table">
-          <div>Basal Metabolic Rate</div>
+        <div className="result-row2">
+          <div className="bmr">Basal Metabolic Rate</div>
           <div className="kcal">{Math.round(bmr * 1000) / 1000}</div>
           <div className="kJ">{Math.round(bmr * 4186.84) / 1000}</div>
         </div>
-        <div className="result-table">
-          <div>Total Daily Energy Expenditure</div>
+        <div className="result-row3">
+          <div className="tdee">Total Daily Energy Expenditure</div>
           <div className="kcal">{Math.round(tdee * 1000) / 1000}</div>
           <div className="kJ">{Math.round(tdee * 4186.84) / 1000}</div>
         </div>

@@ -14,7 +14,10 @@ export default function Footer() {
         <a href="#">Pricing</a>
         <a href="#">Blog</a>
       </nav>
-      <button type="button">Go To Top🔺</button>
+      <button type="button">
+        <p>Go To Top</p>
+        <img src="../src/assets/img/Button.png"></img>
+      </button>
     </footer>
   );
 }
